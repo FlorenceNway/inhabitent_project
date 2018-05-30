@@ -39,3 +39,23 @@
     );
   }
 })();
+
+
+
+
+
+// var button = document.getElementsByClassName('search-toggle'); 
+
+// button.onclick = function() {
+
+//     var div = document.getElementsByClassName('searchbox');
+//     if (div.style.display !== 'none') {
+//         div.style.display = 'none';
+        
+//     }
+//     else {
+//         div.style.display = 'block';
+        
+//     }
+// };
+

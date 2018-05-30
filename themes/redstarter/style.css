@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -666,3 +667,537 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body {
+  color: #404040;
+  font-family: "Merriweather Sans", serif;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.container-for-all {
+  width: 1120px;
+  margin: auto; }
+
+/*-----------------Navigation Menu-----------------------*/
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  font-family: "Merriweather Sans", serif; }
+  .menu-container .main-navigation {
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 70%; }
+    .menu-container .main-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .menu-container .main-navigation ul li {
+        padding-left: 50px; }
+    .menu-container .main-navigation a {
+      padding: 5px;
+      font-family: "Merriweather Sans", serif;
+      font-size: 1.2em; }
+  .menu-container .logo {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    z-index: 1; }
+
+hr {
+  width: 0; }
+
+.bgimg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/home-hero.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.9;
+  z-index: -3;
+  position: relative;
+  top: -140px;
+  margin-bottom: -50px; }
+
+/*--------header for other pages-------------*/
+.green-header div.logo {
+  background-image: url(../../images/logos/inhabitent-logo-tent.svg); }
+
+.green-header .main-navigation ul li a {
+  color: #248a83;
+  font-size: 1.2em; }
+
+.green-header .fa-search {
+  color: #248a83; }
+
+.green-header hr {
+  color: #aaa;
+  width: 100%; }
+
+.white-header div.logo {
+  background-image: url(../../images/logos/inhabitent-logo-tent-white.svg); }
+
+.white-header .main-navigation ul li a {
+  color: #fff;
+  font-size: 1.2em; }
+
+.white-header .fa-search {
+  color: #fff; }
+
+.white-header hr {
+  color: transparent;
+  width: 0; }
+
+/*------------------search----------------*/
+fieldset {
+  width: 10%;
+  border: unset; }
+
+.search-toggle {
+  display: none; }
+
+/*.............. Shop Stuff front page---------------*/
+.frontpage-title {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center; }
+
+.shop-stuff-product {
+  height: 400px; }
+  .shop-stuff-product h2 {
+    text-align: center;
+    line-height: 1.75;
+    font-size: 1.8em; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center; }
+  .product-type-blocks .product-type-wrapper {
+    width: 23%;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px; }
+    .product-type-blocks .product-type-wrapper img {
+      width: 100px;
+      height: 100px; }
+    .product-type-blocks .product-type-wrapper a.btn {
+      background: #248a83;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Novecento Sans Web',sans-serif;
+      font-size: 14.4px;
+      font-size: .9rem;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.product-type-wrapper:hover {
+  border-color: #d99054; }
+
+/*.............. Shop Archive page---------------*/
+.shopstuff-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Merriweather Sans", serif; }
+
+.menu-shop-container {
+  width: 30%;
+  margin: 20px auto; }
+  .menu-shop-container #shop-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .menu-shop-container #shop-menu li a {
+      color: #248a83;
+      text-transform: uppercase;
+      font-size: 1.2em; }
+
+.product-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .product-blocks .products-wrapper {
+    width: 23%;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1; }
+    .product-blocks .products-wrapper .thumbnail-wrapper {
+      background-color: #e1e1e1;
+      height: 180px; }
+      .product-blocks .products-wrapper .thumbnail-wrapper img {
+        width: 100%;
+        height: 95%; }
+    .product-blocks .products-wrapper .product-info {
+      font-size: .9rem;
+      padding-left: 0.75rem;
+      /*span:after{
+				content:" ............";
+			}*/ }
+
+/*.............. Shop taxonomies-Archive page---------------*/
+.product-type {
+  text-align: center; }
+  .product-type h1 {
+    font-size: 1.8em;
+    font-weight: bold; }
+  .product-type hr {
+    width: 100%;
+    border-bottom: 1px dashed #e1e1e1; }
+
+/*--------- front page JOURNAL ---------*/
+.journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px; }
+  .journal .blog-post-thumnail {
+    border: 1px solid #e1e1e1;
+    height: 480px; }
+  .journal h2 {
+    color: #248a83;
+    text-transform: uppercase;
+    font-weight: bolder; }
+  .journal .thumbnail-wrapper {
+    background-color: #e1e1e1;
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+    .journal .thumbnail-wrapper img {
+      width: 100%;
+      height: 97%; }
+  .journal .descrpt-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .75rem;
+    height: 180px; }
+
+a.post-btn {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 12px; }
+
+a.post-btn:hover {
+  background: #248a83;
+  color: #fff;
+  border: none; }
+
+.journal div {
+  width: 360px; }
+
+/*-----------------JOURNAL page-----------*/
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e1e1e1; }
+  #grid-container .blog-wrapper {
+    grid-column: 1 / 3;
+    padding: 20px 30px; }
+  #grid-container .journal-page-sidebar {
+    grid-column: 3/ 4; }
+  #grid-container .single-blog-wrapper {
+    position: relative;
+    margin-bottom: 30px; }
+  #grid-container .blog-name {
+    background-color: #248a83;
+    color: #fff;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 97%;
+    top: 10px; }
+  #grid-container .blog-img {
+    width: 100%; }
+    #grid-container .blog-img img {
+      width: 100%;
+      height: auto; }
+  #grid-container .sub-detail {
+    width: 40%;
+    background: #248a83;
+    position: relative;
+    padding: 5px 10px;
+    right: 0;
+    top: -47px;
+    color: #fff;
+    left: 411px; }
+  #grid-container .blog-content {
+    margin-top: -36px; }
+
+.journal-page-sidebar {
+  padding: 0 50px;
+  line-height: 1.5; }
+
+/*--------- front page ADVENTURES ---------*/
+.adventure ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 2fr;
+  grid-gap: 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  width: 1120px;
+  list-style: none; }
+  .adventure ul li:first-child {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    height: 720px; }
+    .adventure ul li:first-child .story-wrapper {
+      height: 720px; }
+      .adventure ul li:first-child .story-wrapper img {
+        width: 100%;
+        height: 100%; }
+  .adventure ul li:nth-child(2) {
+    grid-column: 3/span 2;
+    grid-row: 1/span 1; }
+  .adventure ul li {
+    line-height: 1;
+    position: relative;
+    width: 100%; }
+  .adventure ul .story-wrapper {
+    height: 360px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+    .adventure ul .story-wrapper img {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+  .adventure ul .story-info {
+    margin: 1rem;
+    position: absolute;
+    top: -15px;
+    z-index: 2; }
+    .adventure ul .story-info h3 {
+      font-size: 3rem; }
+      .adventure ul .story-info h3 a {
+        color: #fff;
+        text-decoration: none; }
+
+.more-adv-btn {
+  margin-left: 177px;
+  margin-bottom: 30px; }
+  .more-adv-btn a {
+    color: #fff;
+    background: #248a83;
+    border: none; }
+
+/*--------- Archive ADVENTURES ---------*/
+.archive-adventure ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px 20px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+  list-style: none; }
+  .archive-adventure ul li {
+    height: 360px;
+    line-height: 1;
+    position: relative;
+    width: 100%; }
+  .archive-adventure ul .story-wrapper {
+    position: absolute;
+    z-index: 1; }
+    .archive-adventure ul .story-wrapper img {
+      width: 100%; }
+  .archive-adventure ul .story-info {
+    margin: 1.5rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 100px; }
+    .archive-adventure ul .story-info h3 {
+      font-size: 3rem; }
+      .archive-adventure ul .story-info h3 a {
+        color: #fff;
+        text-decoration: none; }
+
+/*--------- Single ADVENTURES ---------*/
+.type-adventure img {
+  width: 100%;
+  position: relative;
+  top: -140px;
+  margin-bottom: -100px;
+  z-index: -3; }
+
+.type-adventure h1 {
+  text-align: center; }
+
+.type-adventure .entry-meta, .type-adventure .entry-content, .type-adventure .jsfooter {
+  width: 1120px;
+  margin: 0 auto; }
+
+.type-adventure .social-button {
+  text-align: center; }
+
+.type-adventure .black-btn {
+  cursor: pointer;
+  padding: .75rem 1.5rem;
+  border: none;
+  background-color: transparent; }
+
+.entry-meta, .entry-content, .jsfooter {
+  width: 1120px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+/*-----------------ABOUT US----------------*/
+.about-us-banner img {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  top: -160px;
+  z-index: -2;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%); }
+
+.about-title {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  color: #fff;
+  font-size: 2em; }
+
+.content-info {
+  width: 60%;
+  margin-top: -120px;
+  line-height: 1.3; }
+  .content-info h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+/*-----------------FIND US----------------*/
+.entry-title h1 {
+  text-align: center; }
+
+.findus-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .findus-grid-container .map-side {
+    grid-column: 1 / 3;
+    padding: 20px 20px; }
+  .findus-grid-container .find-us-sidebar {
+    grid-column: 3/ 4; }
+
+/*-----------------FOOTER----------------*/
+.site-footer {
+  width: 100%;
+  height: 400px;
+  background: url("../../images/dark-wood.png");
+  position: relative; }
+  .site-footer .footer-section {
+    color: #fff;
+    line-height: 1.75;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    padding-top: 40px; }
+  .site-footer .footer-blocks-wrapper {
+    width: 20%; }
+    .site-footer .footer-blocks-wrapper .fab {
+      font-size: 30px;
+      padding-right: 10px; }
+  .site-footer .footer-logo-wrapper {
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .site-footer h2 {
+    color: #d99054;
+    font-size: 1.2em;
+    font-family: 'Novovento Sans Web';
+    font-weight: bold; }
+  .site-footer a {
+    text-decoration: none;
+    color: #fff; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff; }
+    .site-footer .site-info div {
+      position: absolute;
+      bottom: 0; }
+
+.footer-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }

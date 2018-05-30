@@ -61,9 +61,30 @@ function red_starter_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
+		'before_title'  => '<br><h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar' ),
+		'id'            => 'business-hours',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar' ),
+		'id'            => 'contact-info',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
@@ -88,6 +109,8 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'tent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array( 'jquery' ), NULL, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -110,3 +133,21 @@ function my_login_stylesheet() {
     wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/login.js' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+
+
+function register_my_menus() {
+		  register_nav_menus(
+			    array(
+			      'primary' => __( 'Primary Menu' ),
+			      'shop' => __( 'Shop Menu' )
+			    )
+		  );
+}
+add_action( 'init', 'register_my_menus' );
+
+// function nav_search( $items, $args ) {
+//     $items .= '<li>' . get_search_form( false ) . '</li>';
+//     return $items;
+// }
+// add_filter( 'wp_nav_menu_items','nav_search', 10, 2 );

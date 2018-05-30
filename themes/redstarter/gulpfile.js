@@ -1,11 +1,11 @@
 const gulp = require('gulp');
-const prettyError = require('gulp-prettyerror');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const cssnano = require('gulp-cssnano');
 const uglify = require('gulp-uglify');
 const eslint = require('gulp-eslint');
+const prettyError = require('gulp-prettyerror');
 const browserSync = require('browser-sync');
 
 // Create basic Gulp tasks
@@ -61,7 +61,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost[:port-here]/[your-dir-name-here]'
+	  proxy: 'localhost/inhabitent_project/'
   });
 
   gulp.watch(files).on('change', browserSync.reload);

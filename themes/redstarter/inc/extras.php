@@ -37,10 +37,12 @@ add_action( 'login_head', 'inhabitent_login_logo' ); //(hook, function name)
 
 
 function inhabitent_login_logo_url($url) { //argument is previous url
-    // return home_url(); //index.html
+    return home_url(); //index.html
+
+    //return home_url().'/blog/';
     // or
     // return 'http://google.com';
-    return 'http://localhost/inhabitent_project/';
+    // return 'http://localhost/inhabitent_project/';
 }
 add_filter( 'login_headerurl', 'inhabitent_login_logo_url' ); //(filter name, function name)
 

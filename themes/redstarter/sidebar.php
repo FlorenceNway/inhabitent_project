@@ -13,3 +13,11 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'business-hours' ); ?>
+</div>
+
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'contact-info' ); ?>
+</div>
