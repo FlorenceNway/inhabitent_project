@@ -1,23 +1,37 @@
-# Inhabitent Project
 
-A WordPress starter theme for the Inhabitent Project, forked from Underscores.
+## Inhabitent Project (30 May 2018)
 
-## Installation
+- implement from the WordPress starter theme
 
-### 1. Download me 
 
-Then add me to your `wp-content/themes` directory.
+## Installing / Getting started
 
-### 2. Rename the `inhabitent_project` directory
+- install WordPress
+- create database
+- install required gulp npms
+- install plugins
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+## Developing
 
-### 4. Update the proxy in `gulpfile.js`
+- implement using PHP
+- developing the different pages of site using template hierarchy
+- Contain a custom static homepage, About page, Contact page (with a functioning contact form)
+- Contain a blog post index page and a single view for blog posts
+- Contain a product archive, a product type archive page, and single template for products
+- Contain a search results page and 404 page
+- implement the CSS styles with SASS
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-And now would be a good time to `git init` :)
+### Publishing
+
+- add administrator
+- export database
+- commit and pushed to GitHub
+
+
+## Links
+
+- Project homepage: https://florencenway.github.io/inhabitent_project/
+- Repository: https://github.com/FlorenceNway/inhabitent_project
